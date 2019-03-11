@@ -55,7 +55,7 @@ public class Shooting : MonoBehaviour
             {
                 Instantiate(energy, firePointEnergy);
             }
-            if(rplayerInput.GetButton("Fire 2"))
+            if(rplayerInput.GetAxisRaw("Fire 2") > 0.5f)
             {
                 attack += Time.deltaTime;
             }

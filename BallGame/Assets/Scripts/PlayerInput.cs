@@ -63,7 +63,7 @@ public class PlayerInput : MonoBehaviour
                 }
             }
         }
-        if(playerInput.GetButton("Fire 2"))
+        if(playerInput.GetAxisRaw("Fire 2") > 0.5f)
         {
             attack += Time.deltaTime;
         }
